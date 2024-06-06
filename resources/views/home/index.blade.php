@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('content')
 
-<div class="hero">
+{{-- <div class="hero">
     <h1 class="hero__title">Мой дневничок</h1>
 
     <div class="hero__sorting">
@@ -58,5 +58,5 @@
         <a class="pagination__item" href="#">5</a>
         <a class="pagination__arrow pagination__arrow_next" href="#">next</a>
     </div>
-</div>
+</div> --}}
 @endsection

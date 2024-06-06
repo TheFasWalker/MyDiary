@@ -3,9 +3,34 @@
     margin: 0;
     list-style-type: none;
     text-decoration: none;
+    font-family: "Nunito", sans-serif;
 }
 button{
     border: none;
     cursor: pointer;
     background-color: inherit;
+    font-family: "Nunito", sans-serif;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
 }
+.container{
+    // width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    @media(max-width:1300px){
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    @media(max-width:900px){
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+input,textarea{
+    border: none;
+}
+@import '_header';
+@import '_footer';
+@import '_popup';
+

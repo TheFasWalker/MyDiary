@@ -1,0 +1,117 @@
+.popup{
+    &__wrapper{
+        display: none;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #050f28cb;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+    }
+    &__wrapper.visible{
+        display: flex;
+    }
+    &__container{
+        background-color: #FFFFFF;
+        border-radius: 40px;
+        width:1200px
+    }
+    &__close{
+        background-color: inherit;
+        height: 20px;
+        width: 20px;
+        margin-left: auto;
+    }
+    &__container{
+        padding: 38px 45px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    &__label{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        span{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 110%;
+            color: #000;
+        }
+        input,textarea{
+            background-color: #F6F6F6;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        input{
+             height: 60px;
+        }
+        textarea{
+            height: 146px;
+        }
+    }
+    &__title{
+        grid-area: title;
+    }
+    &__item-label{
+        grid-area: dataLabel;
+    }
+    &__item-date{
+        grid-area: date;
+    }
+    &__item-desc{
+        grid-area: desc;
+    }
+    &__submit{
+        grid-area: submit;
+        width: 100%;
+        background-color: #050F28;
+        border-radius: 40px;
+        color: #FFFFFF;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 90%;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+
+
+
+    &__form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px 20px;
+        grid-template-areas:
+        'title title'
+        'dataLabel date'
+        'desc desc'
+        'submit .'
+        ;
+    }
+}
+
+.popup__label.error{
+    position: relative;
+    input{
+        border: 1px solid #FF832A;
+    }
+    .errorMessage{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 110%;
+        color:#FF832A;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+
